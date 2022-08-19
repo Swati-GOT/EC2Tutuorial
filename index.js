@@ -25,12 +25,12 @@ handler: (request, h) => {
 2
  await server.start();
  console.log('Server running on %s', server.info.uri);
-//  var loop = new Infiniteloop();
-//  //use loop.add to add a function
-//  //fisrt argument should be the fn, the rest is the fn's arguments
-//  loop.add(say, 'Looping', ' Forever!');
-//  //make it run
-//  loop.run();
+ var loop = new Infiniteloop();
+ //use loop.add to add a function
+ //fisrt argument should be the fn, the rest is the fn's arguments
+ loop.add(say, 'Looping', ' Forever!');
+ //make it run
+ loop.run();
 };
 
 function say(word1, word2){
